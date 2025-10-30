@@ -1,0 +1,37 @@
+
+#include <stdio.h>
+
+int main() {
+    int roomNo, days;
+    float ratePerDay, totalAmount;
+    char name[50];
+
+    
+    printf("Enter Customer Name: ");
+    scanf("%s", name);
+
+    printf("Enter Room Number: ");
+    scanf("%d", &roomNo);
+
+    printf("Enter Number of Days Stayed: ");
+    scanf("%d", &days);
+
+    printf("Enter Rate per Day: ");
+    scanf("%f", &ratePerDay);
+
+   
+    totalAmount = days * ratePerDay;
+
+    
+    printf("\n========== HOTEL BILL ==========\n");
+    printf("Customer Name     : %s\n", name);
+    printf("Room Number       : %d\n", roomNo);
+    printf("Days Stayed       : %d\n", days);
+    printf("Rate per Day (Rs) : %.2f\n", ratePerDay);
+    printf("---------------------------------\n");
+    printf("Total Amount (Rs) : %.2f\n", totalAmount);
+    printf("=================================\n");
+    printf("Thank you for staying with us!\n");
+
+    return 0;
+}
